@@ -273,5 +273,6 @@ PORT = int(os.environ.get("PORT", 7860))
 demo.queue(max_size=3).launch(
     server_name="0.0.0.0",
     server_port=PORT,
-    share=False
+    share=True
 )
+

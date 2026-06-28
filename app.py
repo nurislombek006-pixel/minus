@@ -266,11 +266,6 @@ with gr.Blocks(title=APP_NAME, css="footer{display:none !important}") as demo:
         inputs=[audio, mode],
         outputs=[minus_file, vocals_file, status],
     )
-
-demo.queue(max_size=3).launch(
-    server_name="0.0.0.0",
-    server_port=PORT,
-)
 import os
 
 PORT = int(os.environ.get("PORT", 7860))
